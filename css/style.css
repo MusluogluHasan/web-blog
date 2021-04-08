@@ -1,0 +1,170 @@
+body{
+    position: absolute;
+}
+.fix_nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: var(--white);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    z-index: 9990;
+  }
+/*DARK BACKGROUND*/
+.dark-bg-image{
+    background-image: linear-gradient(rgba(0,0,0, .9), rgba(0,0,0, .9)), url('../img/main_bg.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+#home .container{
+    height: 55vh;
+}
+.generic{
+    padding: 50px 0;
+}
+/*LATEST*/
+section#latest .latest-item img{
+    min-height: 100%;
+    width: 100%;
+}
+section#latest button{
+    max-height: 250px;
+    padding: 0;
+    overflow: hidden;
+}
+section#latest .latest-item {
+    position: relative;
+}
+section#latest .latest-item:hover .overlay{
+    opacity: .8;
+    background: #0d6efd;
+}
+section#latest .latest-item:hover i{
+    opacity: 1;
+    transform: none;
+}
+section#latest .overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #0d6efd;
+    opacity: .4;
+    color: #fff;
+    transition: all .5s;
+}
+section#latest .overlay i{
+    transform: translateY(20px);
+    transition: all .5s;
+    opacity: 0;
+    font-size: 2rem;
+}
+#divider .container{
+    height: 35vh;
+}
+section#team .overlay i{
+    transform: translateY(20px);
+    transition: all .5s;
+    opacity: 0;
+    font-size: 2rem;
+}
+
+.error {
+    outline: 1px solid red!important ;
+    
+}
+.comments {
+    margin: 0 auto;
+}
+.comments_none {
+    font-size: 14px;
+    color: rgb(68, 68, 68);
+    text-transform: uppercase;
+    text-align: center;
+}
+.comments_list {
+    margin-bottom: 100px;
+}
+.comments_item {
+    position: relative;
+    padding: 20px;
+    border: 1px solid rgb(142, 142, 211);
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.comment_delete {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 28px;
+    color: red;
+    cursor: pointer;
+}
+.comment_delete:focus{
+    outline: 0;
+}
+.comment_delete:hover{
+    outline: 0;
+    background-color: red;
+    color: white;
+    transition: all .5s ease-in-out;
+}
+.comments_text {
+    margin-bottom: 10px;
+}
+.comments_date {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 40px;
+}
+.input {
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #0d6efd!important;
+    opacity: .7;
+}
+.textarea {
+    width: 100%;
+    max-width: 1200px;
+    max-height: 200px;
+    min-width: 150px;
+    min-height: 300px;
+    min-height: 150px;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #0d6efd!important;
+    opacity: .7;
+}
+
+.btn-send {
+    display: block;
+    background-color: #0d6efd!important;
+    border: none;
+    padding: 10px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5%;
+    margin-bottom: 1rem;
+}
+.btn-send:focus{
+    outline: 0;
+}
+textarea:focus{
+    box-shadow: none!important;   
+}
+ input:focus{
+    box-shadow: none!important;
+}
+.comment-textarea:focus{
+    outline:0!important;
+}
+.comment-input:focus{
+    outline:0!important;
+}
